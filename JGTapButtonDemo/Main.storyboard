@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JGTapButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRS-dg-iol" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="20" y="194" width="158" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Rectangle"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rectangleClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6h-Fk-ron"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPX-YJ-8Gm" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="103" y="28" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Raised"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.27108948849999998" green="0.2888977559" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="raisedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2G-QO-Z5b"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4az-yu-s3o" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="20" y="28" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Flat"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="flatClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inj-yJ-VzO"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-pl-UJF" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="20" y="111" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="jeffSquareHead150.jpg"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="photoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKf-E2-Q5W"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0g-w8-Qp5" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="103" y="111" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Multiline text works too!"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.95294117649999999" green="0.83529411760000005" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="multilineClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oIb-l3-nee"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5w-T5-V3z" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="20" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="A"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gitHubLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="githubClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQC-0l-4xo"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-It-9Dc" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="60" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="B"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.023347210029999999" green="0.56586028440000002" blue="0.15929207779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="instagramLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="instagramClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ap2-tg-9eM"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-Fi-6I5" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="100" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="C"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.098039215690000001" green="0.098039215690000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="linkedinLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="linkedinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUs-0r-Kjy"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJj-IB-I0g" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="180" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="E"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.0" green="0.62745098040000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="twitterLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twitterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lO4-TL-34B"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yJI-Xe-11e" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="220" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="F"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.17254901959999999" green="0.2901960784" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="facebookLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOG-o8-bMc"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6y-sl-Cn7" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="260" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="G"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="googleplusLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="googleplusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDr-0w-rA1"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FO3-9z-qaO" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="140" y="238" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="D"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.82799999999999996" green="0.095000000000000001" blue="0.58299999999999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="pinterestLogo.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pinterestClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxm-JV-A1H"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-rB-HPM" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="557" y="555" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3mz-BA-fOS"/>
+                                    <constraint firstAttribute="width" constant="30" id="jjd-Xe-Kew"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="infoi.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="infoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZO-GW-7cY"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XxU-rB-HPM" secondAttribute="trailing" constant="-7" id="0cT-u5-H0v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XxU-rB-HPM" secondAttribute="bottom" constant="15" id="LSb-iN-bfQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebookLogo.png" width="40" height="40"/>
+        <image name="gitHubLogo.png" width="40" height="40"/>
+        <image name="googleplusLogo.png" width="40" height="40"/>
+        <image name="infoi.png" width="30" height="30"/>
+        <image name="instagramLogo.png" width="40" height="40"/>
+        <image name="jeffSquareHead150.jpg" width="150" height="150"/>
+        <image name="linkedinLogo.png" width="40" height="40"/>
+        <image name="pinterestLogo.png" width="40" height="40"/>
+        <image name="twitterLogo.png" width="40" height="40"/>
+    </resources>
+</document>

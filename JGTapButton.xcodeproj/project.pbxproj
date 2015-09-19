@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA53B771BAD3CC50060F063 /* JGTapButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA53B761BAD3CC50060F063 /* JGTapButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA53B7F1BAD3CDD0060F063 /* JGTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */; settings = {ASSET_TAGS = (); }; };
+		CEA53B871BAD3E3F0060F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */; };
+		CEA53B911BAD3E3F0060F063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */; };
+		CEA53BA31BAD3F000060F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B961BAD3F000060F063 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B981BAD3F000060F063 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B991BAD3F000060F063 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA71BAD3F000060F063 /* infoi.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9A1BAD3F000060F063 /* infoi.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAB1BAD3F000060F063 /* googleplusLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9E1BAD3F000060F063 /* googleplusLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9F1BAD3F000060F063 /* gitHubLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAD1BAD3F000060F063 /* instagramLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA01BAD3F000060F063 /* instagramLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA11BAD3F000060F063 /* twitterLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA21BAD3F000060F063 /* facebookLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BB01BAD3F820060F063 /* JGTapButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; };
+		CEA53BB11BAD3F820060F063 /* JGTapButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA53BB21BAD3F820060F063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA53B6A1BAD3CC50060F063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA53B721BAD3CC50060F063;
+			remoteInfo = JGTapButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEA53BB41BAD3F830060F063 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEA53BB11BAD3F820060F063 /* JGTapButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEA53B731BAD3CC50060F063 /* JGTapButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTapButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA53B761BAD3CC50060F063 /* JGTapButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTapButton.h; sourceTree = "<group>"; };
+		CEA53B781BAD3CC50060F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGTapButton.swift; sourceTree = SOURCE_ROOT; };
+		CEA53B841BAD3E3E0060F063 /* JGTapButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JGTapButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA53B901BAD3E3F0060F063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA53B921BAD3E3F0060F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA53B961BAD3F000060F063 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGEmojiNotify.swift; sourceTree = "<group>"; };
+		CEA53B981BAD3F000060F063 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEA53B991BAD3F000060F063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA53B9A1BAD3F000060F063 /* infoi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoi.png; sourceTree = "<group>"; };
+		CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeffSquareHead150.jpg; sourceTree = "<group>"; };
+		CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterestLogo.png; sourceTree = "<group>"; };
+		CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinLogo.png; sourceTree = "<group>"; };
+		CEA53B9E1BAD3F000060F063 /* googleplusLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleplusLogo.png; sourceTree = "<group>"; };
+		CEA53B9F1BAD3F000060F063 /* gitHubLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitHubLogo.png; sourceTree = "<group>"; };
+		CEA53BA01BAD3F000060F063 /* instagramLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagramLogo.png; sourceTree = "<group>"; };
+		CEA53BA11BAD3F000060F063 /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
+		CEA53BA21BAD3F000060F063 /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLogo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA53B6F1BAD3CC50060F063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA53B811BAD3E3E0060F063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA53BB01BAD3F820060F063 /* JGTapButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEA53B691BAD3CC50060F063 = {
+			isa = PBXGroup;
+			children = (
+				CEA53B751BAD3CC50060F063 /* JGTapButton */,
+				CEA53B851BAD3E3F0060F063 /* JGTapButtonDemo */,
+				CEA53B741BAD3CC50060F063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA53B741BAD3CC50060F063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA53B731BAD3CC50060F063 /* JGTapButton.framework */,
+				CEA53B841BAD3E3E0060F063 /* JGTapButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA53B751BAD3CC50060F063 /* JGTapButton */ = {
+			isa = PBXGroup;
+			children = (
+				CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */,
+				CEA53B761BAD3CC50060F063 /* JGTapButton.h */,
+				CEA53B781BAD3CC50060F063 /* Info.plist */,
+			);
+			path = JGTapButton;
+			sourceTree = "<group>";
+		};
+		CEA53B851BAD3E3F0060F063 /* JGTapButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */,
+				CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */,
+				CEA53B921BAD3E3F0060F063 /* Info.plist */,
+				CEA53B961BAD3F000060F063 /* ViewController.swift */,
+				CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */,
+				CEA53B981BAD3F000060F063 /* Main.storyboard */,
+				CEA53B991BAD3F000060F063 /* Assets.xcassets */,
+				CEA53BB51BAD3FC20060F063 /* images */,
+			);
+			path = JGTapButtonDemo;
+			sourceTree = "<group>";
+		};
+		CEA53BB51BAD3FC20060F063 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CEA53B9A1BAD3F000060F063 /* infoi.png */,
+				CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */,
+				CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */,
+				CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */,
+				CEA53B9E1BAD3F000060F063 /* googleplusLogo.png */,
+				CEA53B9F1BAD3F000060F063 /* gitHubLogo.png */,
+				CEA53BA01BAD3F000060F063 /* instagramLogo.png */,
+				CEA53BA11BAD3F000060F063 /* twitterLogo.png */,
+				CEA53BA21BAD3F000060F063 /* facebookLogo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CEA53B701BAD3CC50060F063 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA53B771BAD3CC50060F063 /* JGTapButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CEA53B721BAD3CC50060F063 /* JGTapButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA53B7B1BAD3CC50060F063 /* Build configuration list for PBXNativeTarget "JGTapButton" */;
+			buildPhases = (
+				CEA53B6E1BAD3CC50060F063 /* Sources */,
+				CEA53B6F1BAD3CC50060F063 /* Frameworks */,
+				CEA53B701BAD3CC50060F063 /* Headers */,
+				CEA53B711BAD3CC50060F063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGTapButton;
+			productName = JGTapButton;
+			productReference = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEA53B831BAD3E3E0060F063 /* JGTapButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA53B931BAD3E3F0060F063 /* Build configuration list for PBXNativeTarget "JGTapButtonDemo" */;
+			buildPhases = (
+				CEA53B801BAD3E3E0060F063 /* Sources */,
+				CEA53B811BAD3E3E0060F063 /* Frameworks */,
+				CEA53B821BAD3E3E0060F063 /* Resources */,
+				CEA53BB41BAD3F830060F063 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA53BB31BAD3F820060F063 /* PBXTargetDependency */,
+			);
+			name = JGTapButtonDemo;
+			productName = JGTapButtonDemo;
+			productReference = CEA53B841BAD3E3E0060F063 /* JGTapButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA53B6A1BAD3CC50060F063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jeff Greenberg";
+				TargetAttributes = {
+					CEA53B721BAD3CC50060F063 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					CEA53B831BAD3E3E0060F063 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = CEA53B6D1BAD3CC50060F063 /* Build configuration list for PBXProject "JGTapButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA53B691BAD3CC50060F063;
+			productRefGroup = CEA53B741BAD3CC50060F063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA53B721BAD3CC50060F063 /* JGTapButton */,
+				CEA53B831BAD3E3E0060F063 /* JGTapButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA53B711BAD3CC50060F063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA53B821BAD3E3E0060F063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA53B911BAD3E3F0060F063 /* LaunchScreen.storyboard in Resources */,
+				CEA53BA71BAD3F000060F063 /* infoi.png in Resources */,
+				CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */,
+				CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */,
+				CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */,
+				CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */,
+				CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */,
+				CEA53BAD1BAD3F000060F063 /* instagramLogo.png in Resources */,
+				CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */,
+				CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */,
+				CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */,
+				CEA53BAB1BAD3F000060F063 /* googleplusLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA53B6E1BAD3CC50060F063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA53B7F1BAD3CDD0060F063 /* JGTapButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA53B801BAD3E3E0060F063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA53BA31BAD3F000060F063 /* ViewController.swift in Sources */,
+				CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */,
+				CEA53B871BAD3E3F0060F063 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA53BB31BAD3F820060F063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA53B721BAD3CC50060F063 /* JGTapButton */;
+			targetProxy = CEA53BB21BAD3F820060F063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA53B901BAD3E3F0060F063 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA53B791BAD3CC50060F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEA53B7A1BAD3CC50060F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CEA53B7C1BAD3CC50060F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JGTapButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA53B7D1BAD3CC50060F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = JGTapButton/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CEA53B941BAD3E3F0060F063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = JGTapButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA53B951BAD3E3F0060F063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = JGTapButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA53B6D1BAD3CC50060F063 /* Build configuration list for PBXProject "JGTapButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA53B791BAD3CC50060F063 /* Debug */,
+				CEA53B7A1BAD3CC50060F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA53B7B1BAD3CC50060F063 /* Build configuration list for PBXNativeTarget "JGTapButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA53B7C1BAD3CC50060F063 /* Debug */,
+				CEA53B7D1BAD3CC50060F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEA53B931BAD3E3F0060F063 /* Build configuration list for PBXNativeTarget "JGTapButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA53B941BAD3E3F0060F063 /* Debug */,
+				CEA53B951BAD3E3F0060F063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA53B6A1BAD3CC50060F063 /* Project object */;
+}

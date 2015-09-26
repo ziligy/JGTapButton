@@ -15,7 +15,6 @@
 		CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */; settings = {ASSET_TAGS = (); }; };
 		CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B981BAD3F000060F063 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B991BAD3F000060F063 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA71BAD3F000060F063 /* infoi.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9A1BAD3F000060F063 /* infoi.png */; settings = {ASSET_TAGS = (); }; };
 		CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */; settings = {ASSET_TAGS = (); }; };
 		CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */; settings = {ASSET_TAGS = (); }; };
 		CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */; settings = {ASSET_TAGS = (); }; };
@@ -26,6 +25,7 @@
 		CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA21BAD3F000060F063 /* facebookLogo.png */; settings = {ASSET_TAGS = (); }; };
 		CEA53BB01BAD3F820060F063 /* JGTapButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; };
 		CEA53BB11BAD3F820060F063 /* JGTapButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEAC1F591BB717A40068FBC3 /* infoi.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC1F581BB717A40068FBC3 /* infoi.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,6 @@
 		CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGEmojiNotify.swift; sourceTree = "<group>"; };
 		CEA53B981BAD3F000060F063 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CEA53B991BAD3F000060F063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEA53B9A1BAD3F000060F063 /* infoi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoi.png; sourceTree = "<group>"; };
 		CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeffSquareHead150.jpg; sourceTree = "<group>"; };
 		CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterestLogo.png; sourceTree = "<group>"; };
 		CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinLogo.png; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		CEA53BA01BAD3F000060F063 /* instagramLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagramLogo.png; sourceTree = "<group>"; };
 		CEA53BA11BAD3F000060F063 /* twitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterLogo.png; sourceTree = "<group>"; };
 		CEA53BA21BAD3F000060F063 /* facebookLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookLogo.png; sourceTree = "<group>"; };
+		CEAC1F581BB717A40068FBC3 /* infoi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		CEA53BB51BAD3FC20060F063 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CEA53B9A1BAD3F000060F063 /* infoi.png */,
+				CEAC1F581BB717A40068FBC3 /* infoi.png */,
 				CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */,
 				CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */,
 				CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */,
@@ -255,11 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA53B911BAD3E3F0060F063 /* LaunchScreen.storyboard in Resources */,
-				CEA53BA71BAD3F000060F063 /* infoi.png in Resources */,
 				CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */,
 				CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */,
 				CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */,
 				CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */,
+				CEAC1F591BB717A40068FBC3 /* infoi.png in Resources */,
 				CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */,
 				CEA53BAD1BAD3F000060F063 /* instagramLogo.png in Resources */,
 				CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */,
@@ -479,6 +479,7 @@
 				CEA53B7D1BAD3CC50060F063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA53B931BAD3E3F0060F063 /* Build configuration list for PBXNativeTarget "JGTapButtonDemo" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				CEA53B951BAD3E3F0060F063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

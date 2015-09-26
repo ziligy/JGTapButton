@@ -23,28 +23,28 @@ public class JGTapButton: UIButton {
     // MARK: Inspectables
     
     // select round or rectangle button shape
-    @IBInspectable var round: Bool = true {
+    @IBInspectable public var round: Bool = true {
         didSet {
             buttonShape = (round ? .Round : .Rectangle)
         }
     }
     
     // select raised or flat style
-    @IBInspectable var raised: Bool = true {
+    @IBInspectable public var raised: Bool = true {
         didSet {
             buttonStyle = (raised ? .Raised : .Flat)
         }
     }
     
     // set title caption for button
-    @IBInspectable var title: String = "JGTapButton" {
+    @IBInspectable public var title: String = "JGTapButton" {
         didSet {
             buttonTitle = title
         }
     }
     
     // optional button image
-    @IBInspectable var image: UIImage=UIImage() {
+    @IBInspectable public var image: UIImage=UIImage() {
         didSet {
             iconImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))
             iconImageView.image = self.image
@@ -52,23 +52,23 @@ public class JGTapButton: UIButton {
     }
     
     // main background button color
-    @IBInspectable var mainColor: UIColor = UIColor.redColor() {
+    @IBInspectable public var mainColor: UIColor = UIColor.redColor() {
         didSet {
             buttonColor = mainColor
         }
     }
     
     // title font size
-    @IBInspectable var fontsize: CGFloat = 22.0 {
+    @IBInspectable public var fontsize: CGFloat = 22.0 {
         didSet {
             titleFontSize = fontsize
         }
     }
     
-    @IBInspectable var fontColor: UIColor = UIColor.whiteColor()
-
+    @IBInspectable public var fontColor: UIColor = UIColor.whiteColor()
     
-    // MARK: Private variables 
+    
+    // MARK: Private variables
     
     private var buttonShape = TapButtonShape.Round
     
@@ -104,7 +104,7 @@ public class JGTapButton: UIButton {
     
     // optional image for
     private var iconImageView = UIImageView(frame: CGRectMake(0, 0, 40, 40))
-
+    
     
     // MARK: Initialize
     func initMaster() {
@@ -116,7 +116,7 @@ public class JGTapButton: UIButton {
         super.init(frame: frame)
         initMaster()
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initMaster()
@@ -141,12 +141,12 @@ public class JGTapButton: UIButton {
     }
     
     
-    // MARK: draw 
+    // MARK: draw
     override public func drawRect(rect: CGRect) {
         outlinePath = drawTapButton(buttonShape, buttonTitle: buttonTitle, fontsize: titleFontSize)
         tapGlowSetup()
     }
-        
+    
     private func tapGlowSetup() {
         
         tapGlowBackgroundView.backgroundColor = tapGlowBackgroundColor
@@ -173,7 +173,7 @@ public class JGTapButton: UIButton {
         } else {
             bezierPath = UIBezierPath(rect: tapButtonFrame)
         }
-            
+        
         buttonColor.setFill()
         bezierPath.fill()
         
@@ -238,5 +238,5 @@ public class JGTapButton: UIButton {
                         }, completion: nil)
             })
     }
-
+    
 }

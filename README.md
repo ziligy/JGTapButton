@@ -1,5 +1,4 @@
-JGTapButton
-==========
+# JGTapButton
 
 Custom @IBDesignable button for Interface Builder that doesn't require any coding.
 

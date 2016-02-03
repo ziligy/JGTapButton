@@ -46,8 +46,13 @@ public class JGTapButton: UIButton {
     // optional button image
     @IBInspectable public var image: UIImage=UIImage() {
         didSet {
-            iconImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))
-            iconImageView.image = self.image
+            setButtonImage()
+        }
+    }
+    
+    @IBInspectable public var imageInset: CGFloat = 0 {
+        didSet {
+            setButtonImage()
         }
     }
     
@@ -66,7 +71,6 @@ public class JGTapButton: UIButton {
     }
     
     @IBInspectable public var fontColor: UIColor = UIColor.whiteColor()
-    
     
     // MARK: Private variables
     
@@ -105,7 +109,6 @@ public class JGTapButton: UIButton {
     // optional image for
     private var iconImageView = UIImageView(frame: CGRectMake(0, 0, 40, 40))
     
-    
     // MARK: Initialize
     func initMaster() {
         self.backgroundColor = UIColor.clearColor()
@@ -122,6 +125,10 @@ public class JGTapButton: UIButton {
         initMaster()
     }
     
+    convenience init(sideSize: CGFloat) {
+        self.init(frame: CGRect(x: 0, y: 0, width: sideSize, height: sideSize))
+    }
+    
     override public func prepareForInterfaceBuilder() {
         invalidateIntrinsicContentSize()
         self.backgroundColor = UIColor.clearColor()
@@ -133,13 +140,13 @@ public class JGTapButton: UIButton {
         super.layoutSubviews()
         iconImageView.layer.mask = tapGlowMask
         tapGlowBackgroundView.layer.mask = tapGlowMask
+        
     }
     
     // override intrinsic size for uibutton
     public override func intrinsicContentSize() -> CGSize {
         return bounds.size
     }
-    
     
     // MARK: draw
     override public func drawRect(rect: CGRect) {
@@ -215,6 +222,11 @@ public class JGTapButton: UIButton {
         return bezierPath
     }
     
+    private func setButtonImage() {
+        iconImageView.frame = CGRectMake(imageInset, imageInset, CGRectGetWidth(self.frame) - imageInset*2, CGRectGetHeight(self.frame) - imageInset*2)
+        iconImageView.image = self.image
+    }
+    
     // MARK: Tap events
     override public func beginTrackingWithTouch(touch: UITouch,
         withEvent event: UIEvent?) -> Bool {
@@ -238,5 +250,4 @@ public class JGTapButton: UIButton {
                         }, completion: nil)
             })
     }
-    
 }

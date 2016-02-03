@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CEA53B771BAD3CC50060F063 /* JGTapButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA53B761BAD3CC50060F063 /* JGTapButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEA53B7F1BAD3CDD0060F063 /* JGTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */; settings = {ASSET_TAGS = (); }; };
+		CEA53B7F1BAD3CDD0060F063 /* JGTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */; };
 		CEA53B871BAD3E3F0060F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */; };
 		CEA53B911BAD3E3F0060F063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */; };
-		CEA53BA31BAD3F000060F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B961BAD3F000060F063 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B981BAD3F000060F063 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B991BAD3F000060F063 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */; settings = {ASSET_TAGS = (); }; };
-		CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAB1BAD3F000060F063 /* googleplusLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9E1BAD3F000060F063 /* googleplusLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9F1BAD3F000060F063 /* gitHubLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAD1BAD3F000060F063 /* instagramLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA01BAD3F000060F063 /* instagramLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA11BAD3F000060F063 /* twitterLogo.png */; settings = {ASSET_TAGS = (); }; };
-		CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA21BAD3F000060F063 /* facebookLogo.png */; settings = {ASSET_TAGS = (); }; };
+		CEA53BA31BAD3F000060F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B961BAD3F000060F063 /* ViewController.swift */; };
+		CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */; };
+		CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B981BAD3F000060F063 /* Main.storyboard */; };
+		CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B991BAD3F000060F063 /* Assets.xcassets */; };
+		CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */; };
+		CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */; };
+		CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */; };
+		CEA53BAB1BAD3F000060F063 /* googleplusLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9E1BAD3F000060F063 /* googleplusLogo.png */; };
+		CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9F1BAD3F000060F063 /* gitHubLogo.png */; };
+		CEA53BAD1BAD3F000060F063 /* instagramLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA01BAD3F000060F063 /* instagramLogo.png */; };
+		CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA11BAD3F000060F063 /* twitterLogo.png */; };
+		CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53BA21BAD3F000060F063 /* facebookLogo.png */; };
 		CEA53BB01BAD3F820060F063 /* JGTapButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; };
 		CEA53BB11BAD3F820060F063 /* JGTapButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEA53B731BAD3CC50060F063 /* JGTapButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEAC1F591BB717A40068FBC3 /* infoi.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC1F581BB717A40068FBC3 /* infoi.png */; settings = {ASSET_TAGS = (); }; };
+		CEAC1F591BB717A40068FBC3 /* infoi.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAC1F581BB717A40068FBC3 /* infoi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

@@ -242,6 +242,29 @@
                                     <action selector="infoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZO-GW-7cY"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXd-Jf-UOq" customClass="JGTapButton" customModule="JGTapButton">
+                                <rect key="frame" x="190" y="196" width="105" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="raised" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="beveled"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontsize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="squared" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bevelSize">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rectangleClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTx-WU-FAz"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -252,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-737" y="-11"/>
+            <point key="canvasLocation" x="-738.75" y="-11.619718309859156"/>
         </scene>
     </scenes>
     <resources>

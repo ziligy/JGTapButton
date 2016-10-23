@@ -18,6 +18,12 @@ enum TapButtonStyle {
     case flat
 }
 
+enum TapButtonCorners {
+    case beveled
+    case squared
+    
+}
+
 @IBDesignable
 public class JGTapButton: UIButton {
     
@@ -34,6 +40,13 @@ public class JGTapButton: UIButton {
     @IBInspectable public var raised: Bool = true {
         didSet {
             buttonStyle = (raised ? .raised : .flat)
+        }
+    }
+    
+    // select raised or flat style
+    @IBInspectable public var squared: Bool = true {
+        didSet {
+            buttonCorners = (squared ? .squared : .beveled)
         }
     }
     
@@ -71,6 +84,12 @@ public class JGTapButton: UIButton {
         }
     }
     
+    @IBInspectable public var bevelSize: CGFloat = 7.0 {
+        didSet {
+            cornerRadius = bevelSize
+        }
+    }
+    
     @IBInspectable public var fontColor: UIColor = UIColor.white
     
     // MARK: Private variables
@@ -79,11 +98,15 @@ public class JGTapButton: UIButton {
     
     private var buttonStyle = TapButtonStyle.flat
     
+    private var buttonCorners = TapButtonCorners.squared
+    
     private var buttonTitle = ""
     
     private var buttonColor = UIColor.red
     
     private var titleFontSize: CGFloat = 22.0
+    
+    private var cornerRadius: CGFloat = 7.0
     
     private var tapButtonFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
@@ -148,11 +171,6 @@ public class JGTapButton: UIButton {
         return bounds.size
     }
     
-    // override intrinsic size for uibutton
-//    public override func intrinsicContentSize() -> CGSize {
-//        return bounds.size
-//    }
-    
     // MARK: draw
     override public func draw(_ rect: CGRect) {
         outlinePath = drawTapButton(buttonShape, buttonTitle: buttonTitle, fontsize: titleFontSize)
@@ -183,7 +201,11 @@ public class JGTapButton: UIButton {
         if buttonShape == .round {
             bezierPath = UIBezierPath(ovalIn: tapButtonFrame)
         } else {
-            bezierPath = UIBezierPath(rect: tapButtonFrame)
+            if buttonCorners == .squared {
+                bezierPath = UIBezierPath(rect: tapButtonFrame)
+            } else {
+                bezierPath = UIBezierPath(roundedRect: tapButtonFrame, cornerRadius: cornerRadius)
+            }
         }
         
         buttonColor.setFill()

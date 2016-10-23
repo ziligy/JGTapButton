@@ -17,7 +17,7 @@ Custom @IBDesignable button for Interface Builder that doesn't require any codin
 * Xcode 6.1
 * iOS 8.0+
 
-**NOTE: demo uses 7.0 & ios 9**
+**NOTE: demo uses 8.0 & ios 9**
 
 ## Usage
 1. Copy JGTapButton.swift class to your Xcode Project

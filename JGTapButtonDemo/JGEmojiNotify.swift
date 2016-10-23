@@ -4,13 +4,14 @@
 //  Created by Jeff on 9/14/15.
 //  Copyright © 2015 Jeff Greenberg. All rights reserved.
 //
+//  updated to swift 3 10/23/16
 
 import UIKit
 
 public class JGEmojiNotify: UIView {
     
     // MARK: Public variables
-    public var mainColor = UIColor.cyanColor() {
+    public var mainColor = UIColor.cyan {
         didSet {
             backgroundColor = mainColor
         }
@@ -50,8 +51,8 @@ public class JGEmojiNotify: UIView {
         }
     }
     
-    public var paneShowVisibleTime: NSTimeInterval = 0.8
-    public var paneSlideAnimationTime: NSTimeInterval = 0.2
+    public var paneShowVisibleTime: TimeInterval = 0.8
+    public var paneSlideAnimationTime: TimeInterval = 0.2
     
     
     // MARK: Private variables
@@ -77,7 +78,7 @@ public class JGEmojiNotify: UIView {
     
     // MARK: Public Functions
     public func setMessage(
-        emoji emoji: String = "🙌",
+        emoji: String = "🙌",
         title: String = "",
         message: String = "",
         emojiFontSize: CGFloat = 68,
@@ -89,20 +90,20 @@ public class JGEmojiNotify: UIView {
         self.title.text = title
         self.message.text = message
         
-        self.emoji.font = UIFont.systemFontOfSize(emojiFontSize)
-        self.title.font = UIFont.systemFontOfSize(titleFontSize)
-        self.message.font = UIFont.systemFontOfSize(messageFontSize)
+        self.emoji.font = UIFont.systemFont(ofSize: emojiFontSize)
+        self.title.font = UIFont.systemFont(ofSize: titleFontSize)
+        self.message.font = UIFont.systemFont(ofSize: messageFontSize)
         
-        self.emoji.hidden = self.emoji.text!.isEmpty
-        self.title.hidden = self.title.text!.isEmpty
-        self.message.hidden = self.message.text.isEmpty
+        self.emoji.isHidden = self.emoji.text!.isEmpty
+        self.title.isHidden = self.title.text!.isEmpty
+        self.message.isHidden = self.message.text.isEmpty
         
         if self.message.text.isEmpty {
-            mainStackView.distribution = UIStackViewDistribution.FillProportionally
-            self.title.textAlignment = .Left
+            mainStackView.distribution = UIStackViewDistribution.fillProportionally
+            self.title.textAlignment = .left
         } else {
-            mainStackView.distribution = UIStackViewDistribution.Fill
-            self.title.textAlignment = .Center
+            mainStackView.distribution = UIStackViewDistribution.fill
+            self.title.textAlignment = .center
         }
         
     }
@@ -111,13 +112,13 @@ public class JGEmojiNotify: UIView {
         
         self.setNeedsUpdateConstraints()
         
-        UIView.animateWithDuration(paneSlideAnimationTime,
+        UIView.animate(withDuration: paneSlideAnimationTime,
             
             delay: 0.0,
             usingSpringWithDamping: 0.75,
             initialSpringVelocity: 0.5,
             
-            options: [UIViewAnimationOptions.CurveEaseInOut],
+            options: [UIViewAnimationOptions.curveEaseInOut],
             
             animations: {
                 self.topBoxConstraint.constant = self.paneShowYposition
@@ -125,7 +126,7 @@ public class JGEmojiNotify: UIView {
                 
             }, completion: { finished in
                 
-                UIView.animateWithDuration(0.85, delay: self.paneShowVisibleTime, options: [], animations: {
+                UIView.animate(withDuration: 0.85, delay: self.paneShowVisibleTime, options: [], animations: {
                     self.alpha = 0
                     }, completion: { finished in
                         self.topBoxConstraint.constant = self.paneHideYposition
@@ -140,23 +141,23 @@ public class JGEmojiNotify: UIView {
         
         backgroundColor = mainColor
         
-        emoji.textAlignment = .Center
-        emoji.backgroundColor = UIColor.clearColor()
+        emoji.textAlignment = .center
+        emoji.backgroundColor = UIColor.clear
         
         setMessage(title: "Congrats!")
         
-        title.backgroundColor = UIColor.clearColor()
+        title.backgroundColor = UIColor.clear
         
-        message.scrollEnabled = false
-        message.editable = false
-        message.backgroundColor = UIColor.clearColor()
+        message.isScrollEnabled = false
+        message.isEditable = false
+        message.backgroundColor = UIColor.clear
         
-        mainStackView.alignment = UIStackViewAlignment.Center
-        mainStackView.axis = UILayoutConstraintAxis.Horizontal
+        mainStackView.alignment = UIStackViewAlignment.center
+        mainStackView.axis = UILayoutConstraintAxis.horizontal
         
-        textStackView.distribution = UIStackViewDistribution.Fill
-        textStackView.alignment = UIStackViewAlignment.Center
-        textStackView.axis = UILayoutConstraintAxis.Vertical
+        textStackView.distribution = UIStackViewDistribution.fill
+        textStackView.alignment = UIStackViewAlignment.center
+        textStackView.axis = UILayoutConstraintAxis.vertical
         
         mainStackView.addArrangedSubview(emoji)
         textStackView.addArrangedSubview(title)
@@ -186,34 +187,28 @@ public class JGEmojiNotify: UIView {
         
     }
     
-    // Constraints
-    override public class func requiresConstraintBasedLayout() -> Bool {
-        return true
-    }
-    
     private func addConstraints(){
         if let topAnchorDrop = self.superview?.topAnchor {
             
             translatesAutoresizingMaskIntoConstraints = false
             
-            topBoxConstraint = self.topAnchor.constraintEqualToAnchor(topAnchorDrop, constant: paneHideYposition)
-            topBoxConstraint.active = true
+            topBoxConstraint = self.topAnchor.constraint(equalTo: topAnchorDrop, constant: paneHideYposition)
+            topBoxConstraint.isActive = true
             
-            anchorWidth = self.widthAnchor.constraintEqualToAnchor(nil, constant: paneWidth)
-            anchorWidth.active = true
+            anchorWidth = widthAnchor.constraint(equalToConstant: paneWidth)
+            anchorWidth.isActive = true
+            anchorHeight = heightAnchor.constraint(equalToConstant: paneHeight)
+            anchorHeight.isActive = true
             
-            anchorHeight = self.heightAnchor.constraintEqualToAnchor(nil, constant: paneHeight)
-            anchorHeight.active = true
-            
-            anchorCenter = self.centerXAnchor.constraintEqualToAnchor(self.superview?.centerXAnchor, constant: self.paneXcenterOffset)
-            anchorCenter.active = true
+            anchorCenter = self.centerXAnchor.constraint(equalTo: (self.superview?.centerXAnchor)!, constant: self.paneXcenterOffset)
+            anchorCenter.isActive = true
             
             mainStackView.translatesAutoresizingMaskIntoConstraints = false
             
-            mainStackView.widthAnchor.constraintEqualToAnchor(self.widthAnchor).active = true
-            mainStackView.heightAnchor.constraintEqualToAnchor(self.heightAnchor).active = true
-            mainStackView.centerXAnchor.constraintEqualToAnchor(self.centerXAnchor).active = true
-            mainStackView.centerYAnchor.constraintEqualToAnchor(self.centerYAnchor).active = true
+            mainStackView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+            mainStackView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+            mainStackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+            mainStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
             
         }
     }

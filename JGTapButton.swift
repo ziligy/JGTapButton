@@ -4,17 +4,18 @@
 //  Created by Jeff on 8/20/15.
 //  Copyright © 2015 Jeff Greenberg. All rights reserved.
 //
+//  updated to swift 3 10/23/16
 
 import UIKit
 
 enum TapButtonShape {
-    case Round
-    case Rectangle
+    case round
+    case rectangle
 }
 
 enum TapButtonStyle {
-    case Raised
-    case Flat
+    case raised
+    case flat
 }
 
 @IBDesignable
@@ -25,14 +26,14 @@ public class JGTapButton: UIButton {
     // select round or rectangle button shape
     @IBInspectable public var round: Bool = true {
         didSet {
-            buttonShape = (round ? .Round : .Rectangle)
+            buttonShape = (round ? .round : .rectangle)
         }
     }
     
     // select raised or flat style
     @IBInspectable public var raised: Bool = true {
         didSet {
-            buttonStyle = (raised ? .Raised : .Flat)
+            buttonStyle = (raised ? .raised : .flat)
         }
     }
     
@@ -57,7 +58,7 @@ public class JGTapButton: UIButton {
     }
     
     // main background button color
-    @IBInspectable public var mainColor: UIColor = UIColor.redColor() {
+    @IBInspectable public var mainColor: UIColor = UIColor.red {
         didSet {
             buttonColor = mainColor
         }
@@ -70,21 +71,21 @@ public class JGTapButton: UIButton {
         }
     }
     
-    @IBInspectable public var fontColor: UIColor = UIColor.whiteColor()
+    @IBInspectable public var fontColor: UIColor = UIColor.white
     
     // MARK: Private variables
     
-    private var buttonShape = TapButtonShape.Round
+    private var buttonShape = TapButtonShape.round
     
-    private var buttonStyle = TapButtonStyle.Flat
+    private var buttonStyle = TapButtonStyle.flat
     
     private var buttonTitle = ""
     
-    private var buttonColor = UIColor.redColor()
+    private var buttonColor = UIColor.red
     
     private var titleFontSize: CGFloat = 22.0
     
-    private var tapButtonFrame = CGRectMake(0, 0, 100, 100)
+    private var tapButtonFrame = CGRect(x: 0, y: 0, width: 100, height: 100)
     
     // outline shape of button from draw
     private var outlinePath = UIBezierPath()
@@ -100,18 +101,18 @@ public class JGTapButton: UIButton {
         get {
             let maskLayer = CAShapeLayer()
             
-            maskLayer.path = outlinePath.CGPath
+            maskLayer.path = outlinePath.cgPath
             
             return maskLayer
         }
     }
     
     // optional image for
-    private var iconImageView = UIImageView(frame: CGRectMake(0, 0, 40, 40))
+    private var iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
     
     // MARK: Initialize
     func initMaster() {
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
         self.addSubview(iconImageView)
     }
     
@@ -131,7 +132,7 @@ public class JGTapButton: UIButton {
     
     override public func prepareForInterfaceBuilder() {
         invalidateIntrinsicContentSize()
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
     }
     
     
@@ -143,13 +144,17 @@ public class JGTapButton: UIButton {
         
     }
     
-    // override intrinsic size for uibutton
-    public override func intrinsicContentSize() -> CGSize {
+    override public var intrinsicContentSize: CGSize {
         return bounds.size
     }
     
+    // override intrinsic size for uibutton
+//    public override func intrinsicContentSize() -> CGSize {
+//        return bounds.size
+//    }
+    
     // MARK: draw
-    override public func drawRect(rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         outlinePath = drawTapButton(buttonShape, buttonTitle: buttonTitle, fontsize: titleFontSize)
         tapGlowSetup()
     }
@@ -163,20 +168,20 @@ public class JGTapButton: UIButton {
         tapGlowBackgroundView.alpha = 0
     }
     
-    private func drawTapButton(buttonShape: TapButtonShape, buttonTitle: String, fontsize: CGFloat) -> UIBezierPath {
+    private func drawTapButton(_ buttonShape: TapButtonShape, buttonTitle: String, fontsize: CGFloat) -> UIBezierPath {
         
         var bezierPath: UIBezierPath!
         
-        if buttonStyle == .Raised {
-            tapButtonFrame = CGRectMake(1, 1, CGRectGetWidth(self.bounds) - 2, CGRectGetHeight(self.bounds) - 2)
+        if buttonStyle == .raised {
+            tapButtonFrame = CGRect(x: 1, y: 1, width: self.bounds.width - 2, height: self.bounds.height - 2)
         } else {
-            tapButtonFrame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds))
+            tapButtonFrame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
         }
         
         let context = UIGraphicsGetCurrentContext()
         
-        if buttonShape == .Round {
-            bezierPath = UIBezierPath(ovalInRect: tapButtonFrame)
+        if buttonShape == .round {
+            bezierPath = UIBezierPath(ovalIn: tapButtonFrame)
         } else {
             bezierPath = UIBezierPath(rect: tapButtonFrame)
         }
@@ -184,68 +189,71 @@ public class JGTapButton: UIButton {
         buttonColor.setFill()
         bezierPath.fill()
         
-        let shadow = UIColor.blackColor().CGColor
-        let shadowOffset = CGSizeMake(3.1, 3.1)
+        let shadow = UIColor.black.cgColor
+        let shadowOffset = CGSize(width: 3.1, height: 3.1)
         let shadowBlurRadius: CGFloat = 7
         
-        if buttonStyle == .Raised {
-            CGContextSaveGState(context)
-            CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, shadow)
+        if buttonStyle == .raised {
+            context?.saveGState()
+            context?.setShadow(offset: shadowOffset, blur: shadowBlurRadius, color: shadow)
             fontColor.setStroke()
             bezierPath.lineWidth = 1
             bezierPath.stroke()
-            CGContextRestoreGState(context)
+            context?.restoreGState()
         }
         
         // MARK: Title Text
-        if image == "" || iconImageView.image == nil {
+        
+        
+        if let _ = iconImageView.image {
+        } else {
             let buttonTitleTextContent = NSString(string: buttonTitle)
-            CGContextSaveGState(context)
+            context?.saveGState()
             
-            if buttonStyle == .Raised {
-                CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, shadow)
+            if buttonStyle == .raised {
+                context?.setShadow(offset: shadowOffset, blur: shadowBlurRadius, color: shadow)
             }
             
-            let buttonTitleStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
-            buttonTitleStyle.alignment = NSTextAlignment.Center
+            let buttonTitleStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+            buttonTitleStyle.alignment = NSTextAlignment.center
             
-            let buttonTitleFontAttributes = [NSFontAttributeName: UIFont(name: "AppleSDGothicNeo-Regular", size: fontsize)!, NSForegroundColorAttributeName: fontColor, NSParagraphStyleAttributeName: buttonTitleStyle]
+            let buttonTitleFontAttributes = [NSFontAttributeName: UIFont(name: "AppleSDGothicNeo-Regular", size: fontsize)!, NSForegroundColorAttributeName: fontColor, NSParagraphStyleAttributeName: buttonTitleStyle] as [String : Any]
             
-            let buttonTitleTextHeight: CGFloat = buttonTitleTextContent.boundingRectWithSize(CGSizeMake(tapButtonFrame.width, CGFloat.infinity), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: buttonTitleFontAttributes, context: nil).size.height
-            CGContextSaveGState(context)
-            CGContextClipToRect(context, tapButtonFrame);
-            buttonTitleTextContent.drawInRect(CGRectMake(tapButtonFrame.minX, tapButtonFrame.minY + (tapButtonFrame.height - buttonTitleTextHeight) / 2, tapButtonFrame.width, buttonTitleTextHeight), withAttributes: buttonTitleFontAttributes)
-            CGContextRestoreGState(context)
-            CGContextRestoreGState(context)
+            let buttonTitleTextHeight: CGFloat = buttonTitleTextContent.boundingRect(with: CGSize(width: tapButtonFrame.width, height: CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: buttonTitleFontAttributes, context: nil).size.height
+            context?.saveGState()
+            context?.clip(to: tapButtonFrame);
+            buttonTitleTextContent.draw(in: CGRect(x: tapButtonFrame.minX, y: tapButtonFrame.minY + (tapButtonFrame.height - buttonTitleTextHeight) / 2, width: tapButtonFrame.width, height: buttonTitleTextHeight), withAttributes: buttonTitleFontAttributes)
+            context?.restoreGState()
+            context?.restoreGState()
         }
         
         return bezierPath
     }
     
     private func setButtonImage() {
-        iconImageView.frame = CGRectMake(imageInset, imageInset, CGRectGetWidth(self.frame) - imageInset*2, CGRectGetHeight(self.frame) - imageInset*2)
+        iconImageView.frame = CGRect(x: imageInset, y: imageInset, width: self.frame.width - imageInset*2, height: self.frame.height - imageInset*2)
         iconImageView.image = self.image
     }
     
     // MARK: Tap events
-    override public func beginTrackingWithTouch(touch: UITouch,
-        withEvent event: UIEvent?) -> Bool {
+    override public func beginTracking(_ touch: UITouch,
+        with event: UIEvent?) -> Bool {
             
-            UIView.animateWithDuration(0.1, animations: {
+            UIView.animate(withDuration: 0.1, animations: {
                 self.tapGlowBackgroundView.alpha = 1
                 }, completion: nil)
             
-            return super.beginTrackingWithTouch(touch, withEvent: event)
+            return super.beginTracking(touch, with: event)
     }
     
-    override public func endTrackingWithTouch(touch: UITouch?,
-        withEvent event: UIEvent?) {
-            super.endTrackingWithTouch(touch, withEvent: event)
+    override public func endTracking(_ touch: UITouch?,
+        with event: UIEvent?) {
+            super.endTracking(touch, with: event)
             
-            UIView.animateWithDuration(0.1, animations: {
+            UIView.animate(withDuration: 0.1, animations: {
                 self.tapGlowBackgroundView.alpha = 1
                 }, completion: {(success: Bool) -> () in
-                    UIView.animateWithDuration(0.6 , animations: {
+                    UIView.animate(withDuration: 0.6 , animations: {
                         self.tapGlowBackgroundView.alpha = 0
                         }, completion: nil)
             })

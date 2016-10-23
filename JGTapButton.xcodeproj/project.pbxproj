@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9F686A1DBD06F4001626AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9F68691DBD06F4001626AB /* Assets.xcassets */; };
 		CEA53B771BAD3CC50060F063 /* JGTapButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CEA53B761BAD3CC50060F063 /* JGTapButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEA53B7F1BAD3CDD0060F063 /* JGTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B7E1BAD3CDD0060F063 /* JGTapButton.swift */; };
 		CEA53B871BAD3E3F0060F063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */; };
@@ -14,7 +15,6 @@
 		CEA53BA31BAD3F000060F063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B961BAD3F000060F063 /* ViewController.swift */; };
 		CEA53BA41BAD3F000060F063 /* JGEmojiNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */; };
 		CEA53BA51BAD3F000060F063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B981BAD3F000060F063 /* Main.storyboard */; };
-		CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B991BAD3F000060F063 /* Assets.xcassets */; };
 		CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */; };
 		CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */; };
 		CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */; };
@@ -53,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE9F68691DBD06F4001626AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA53B731BAD3CC50060F063 /* JGTapButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGTapButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA53B761BAD3CC50060F063 /* JGTapButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JGTapButton.h; sourceTree = "<group>"; };
 		CEA53B781BAD3CC50060F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		CEA53B961BAD3F000060F063 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JGEmojiNotify.swift; sourceTree = "<group>"; };
 		CEA53B981BAD3F000060F063 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CEA53B991BAD3F000060F063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA53B9B1BAD3F000060F063 /* jeffSquareHead150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeffSquareHead150.jpg; sourceTree = "<group>"; };
 		CEA53B9C1BAD3F000060F063 /* pinterestLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterestLogo.png; sourceTree = "<group>"; };
 		CEA53B9D1BAD3F000060F063 /* linkedinLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinLogo.png; sourceTree = "<group>"; };
@@ -127,12 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				CEA53B861BAD3E3F0060F063 /* AppDelegate.swift */,
-				CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */,
 				CEA53B921BAD3E3F0060F063 /* Info.plist */,
 				CEA53B961BAD3F000060F063 /* ViewController.swift */,
 				CEA53B971BAD3F000060F063 /* JGEmojiNotify.swift */,
+				CE9F68691DBD06F4001626AB /* Assets.xcassets */,
 				CEA53B981BAD3F000060F063 /* Main.storyboard */,
-				CEA53B991BAD3F000060F063 /* Assets.xcassets */,
+				CEA53B8F1BAD3E3F0060F063 /* LaunchScreen.storyboard */,
 				CEA53BB51BAD3FC20060F063 /* images */,
 			);
 			path = JGTapButtonDemo;
@@ -212,14 +212,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jeff Greenberg";
 				TargetAttributes = {
 					CEA53B721BAD3CC50060F063 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
 					};
 					CEA53B831BAD3E3E0060F063 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 57J9ZWLLU7;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -256,7 +259,6 @@
 			files = (
 				CEA53B911BAD3E3F0060F063 /* LaunchScreen.storyboard in Resources */,
 				CEA53BAF1BAD3F000060F063 /* facebookLogo.png in Resources */,
-				CEA53BA61BAD3F000060F063 /* Assets.xcassets in Resources */,
 				CEA53BA91BAD3F000060F063 /* pinterestLogo.png in Resources */,
 				CEA53BAE1BAD3F000060F063 /* twitterLogo.png in Resources */,
 				CEAC1F591BB717A40068FBC3 /* infoi.png in Resources */,
@@ -265,6 +267,7 @@
 				CEA53BAC1BAD3F000060F063 /* gitHubLogo.png in Resources */,
 				CEA53BAA1BAD3F000060F063 /* linkedinLogo.png in Resources */,
 				CEA53BA81BAD3F000060F063 /* jeffSquareHead150.jpg in Resources */,
+				CE9F686A1DBD06F4001626AB /* Assets.xcassets in Resources */,
 				CEA53BAB1BAD3F000060F063 /* googleplusLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,8 +328,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -373,8 +378,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -394,6 +401,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -405,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -416,6 +425,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -423,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -433,30 +444,35 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		CEA53B941BAD3E3F0060F063 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = 57J9ZWLLU7;
 				INFOPLIST_FILE = JGTapButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CEA53B951BAD3E3F0060F063 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = 57J9ZWLLU7;
 				INFOPLIST_FILE = JGTapButtonDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziligy.JGTapButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
